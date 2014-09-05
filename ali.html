@@ -1,190 +1,112 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<!DOCTYPE html>
 <html>
-<head lang="en">
-<meta charset="utf-8" />
+<head>
+<title>Ali Kalkandelen</title>
 
 
-	<title>Profile Page Ali Kalkandelen</title>
-<!--CSS FILES -->
-	<link rel="stylesheet" type="text/css" href="ali.css">
+<meta name="viewport" content="width=device-width">
 
 
+<link href="css/demo.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script	src="js/jquery.smint.js" type="text/javascript" ></script>
+<script type="text/javascript">
 	
-<!--JAVASCRIPT FILES -->	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-			
-	<!--Accordion -->
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
-	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-	
-	
-	
-	
-	<script>
-  $(function() {
-  var icons = {
-      header: "ui-icon-circle-arrow-e",
-      activeHeader: "ui-icon-circle-arrow-s"
-    };
-    $( "#accordion" ).accordion({
-      heightStyle: "content",
-	  active: false,
-        collapsible: true,
-		icons: icons,
+
+$(document).ready( function() {
+    $('.subMenu').smint({
+    	'scrollSpeed' : 1100
     });
-  });
-  
+});
 
-  </script>
-	
 
-	
-	</head>
-	
-	<body>
-	
-	
-	<div class="top">
-	
-	<!--<img border="0" src="profile.jpg" alt="My Profile Picture" class="profile">-->
-	<img border="0" src="njitlogo.jpg" alt="Njit Pic" class="njitlogo" >
-	<ul id="info">
-	<li><h1><b> Ali Kalkandelen </b></h1></li>
-	<li>31250870</li>
-	<li>ak634@njit.edu</li>
-	<li>917-340-2942</li> 
-	</ul>
+</script>
+
+
+</head>
+<body>
+<div class="wrap ">
+	<div class="section sTop">
+		<div class="inner">
+		
+			
+			
+			<div id="picwrapper" style=" text-align:center;">
+			<p class="ali">ALI</p><p class="kalkandelen">KALKANDELEN</p>
+			<img src="profile.jpg" class="profilepic" height="500px" alt="profile picture"/>
+			</div>
+			
+			
+			
+			
+			
+			
+		</div>
 	</div>
+
+	<div class="subMenu" >
+	 	<div class="inner">
+	 		<a href="#sTop" class="subNavBtn">Home</a>
+	 		<a href="#s1" class="subNavBtn">About Me</a> 
+			<a href="#s2" class="subNavBtn">Portfolio</a>
+			<a href="#s3" class="subNavBtn">Gallery</a>
+			<a href="#s4" class="subNavBtn">Section 4</a>
+			<a href="https://www.linkedin.com/profile/view?id=153180565&trk=nav_responsive_tab_profile" class="subNavBtn extLink end">LinkedIn</a>
+		</div>
+	</div>
+
+	<div class="section s1">
+		<div class="inner ">
+			<h1>About me</h1>
+		  <div class="aboutmeleft">
+		  <p class="aboutmeleft">asdkhggggggggggggggggggggggggggggggggggggggaereresjdh.gasjdhgsajdgsajhd
+		  gjsahgdjsahgdjhsagd.
+		  asdkhggggggggggggggggggggggggggggggggggggggasjdhgasjdhgsajdgsajhdgjsahgdjsahgdjhsagd.
+		  asdkhggggggggggggggggggggggggggggggggggggggasjdhgasjdhgsajdgsajhdgjsahgdjsahgdjhsagd.
+		  asdkhggggggggggggggggggggggggggggggggggggggasjdhgasjdhgsajdgsajhdgjsahgdjsahgdjhsagd.
+		  asdkhggggggggggggggggggggggggggggggggggggggasjdhgasjdhgsajdgsajhdgjsahgdjsahgdjhsagd.
+		  asdkhggggggggggggggggggggggggggggggggggggggasjdhgasjdhgsajdgsajhdgjsahgdjsahgdjhsagd</p><br></div>
+		  <img src="kid.jpg" class="kid" alt="kid picture"/>
+		  
+		   <div class="aboutmeright">
+		  <p class="aboutmeright">asdkhggggggggggggggggggggggggggggggggggggggaereresjdh.gasjdhgsajdgsajhd
+		  gjsahgdjsahgdjhsagd.
+		  asdkhggggggggggggggggggggggggggggggggggggggasjdhgasjdhgsajdgsajhdgjsahgdjsahgdjhsagd.
+		  asdkhggggggggggggggggggggggggggggggggggggggasjdhgasjdhgsajdgsajhdgjsahgdjsahgdjhsagd.
+		  asdkhggggggggggggggggggggggggggggggggggggggasjdhgasjdhgsajdgsajhdgjsahgdjsahgdjhsagd.
+		  asdkhggggggggggggggggggggggggggggggggggggggasjdhgasjdhgsajdgsajhdgjsahgdjsahgdjhsagd.
+		  asdkhggggggggggggggggggggggggggggggggggggggasjdhgasjdhgsajdgsajhdgjsahgdjsahgdjhsagd</p></div>
+		  <img src="sister.jpg" class="sister" alt="with sister"/>
+		  
+		</div>
+	</div>
+
+	<div class="section s2">
+		<div class="inner">
+			<h1>Section 2</h1>
+			<p><a href="#s4" class="intLink">Internal Link: Jump to Section 4</a></p>
+			<p><a href="#sTop" class="intLink">Internal Link: Back to Top</a></p>
+		</div>
+	</div>
+
+
+
+	<div class="section s3">
+		<div class="inner">
+			<h1>Section 3</h1>
+		</div>
+	</div>
+
+	<div class="section s4">
+		<div class="inner">
+			<h1>Section 4</h1>
+		</div>
+	</div>
+
 	
-	<br>
-	<br>
-	<br>
-	<div class ="about">
-	<p id="welcome">Welcome to my personal NJIT webpage. This is where i will display my information, my recent works or projects, and other stuff. 
-	Bare in mind that I am always working on new things and therefore the page might not be fully up to date.  </p>
-	<br><br><br>
-	 <div id="accordion">
-  <h3>About Me</h3>
-  <div>
-    <p>
-I grew up in Istanbul, Turkey. Istanbul is the biggest city in Turkey, therefore i have always been a city boy. My parents owned a clothing manufacturing company in Istanbuls busy business district. 
-They served big clothing names like Aeropostale and Lacoste. If you have ever been to an Aeropostale store before 2004, you have probably seen my parents work. </p>
-<p>
-I went to a high class private school in Besiktas and before i could finish middle school i got the news that we are moving to United States. 
-The economy was in rapid decline around that time and we left to find better oppourtunities in the land of the free. My parents, my sister and I rented in Bay Ridge, Brooklyn for 3 years. My dad owned businesses left and right. 
-He got really good in accounting of it all. After months of visiting houses up and down the east coast, we bought a nice house in Secaucus, New Jersey where we currently reside. </p>
-<p>
-For the first 2,3 years my dad owned a cartridge filling business in the small shopping area downtown. He closed shop and operates the business from home now. 
-After finishing high school I got my associates in computer science from Hudson County Community College. I got into the deans list 3 semesters in a row. I was also in the computer science club as a database engineer.
-After my associates I transfered over to Rutgers where i dormed for a year. After finding out Rutgers is not really buddy buddies with Hudson and wont transfer any classes over, I switched to NJIT and plan to earn my bachelors here.
-</p>
-  </div>
-  <h3>Section 2</h3>
-  <div>
-    <p>
-    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-    suscipit faucibus urna.
-    </p>
-  </div>
-  <h3>Section 3</h3>
-  <div>
-    <p>
-    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-    </p>
-    <ul>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-    </ul>
-  </div>
-  <h3>Section 4</h3>
-  <div>
-    <p>
-    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-    mauris vel est.
-    </p>
-    <p>
-    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-    inceptos himenaeos.
-    </p>
-  </div>
+
+	
 </div>
-	
-	
-	
-	</div>
-	
-	<div class="form">
-	<form id="form" name="contactform" method="post" action="http://sfscatering.com/send_form_email.php">
-<table width="450px">
-<tr>
- <td valign="top">
-  <label for="first_name">First Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="first_name" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top"">
-  <label for="last_name">Last Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="last_name" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="email">Email Address *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="email" maxlength="80" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="telephone">Telephone Number</label>
- </td>
- <td valign="top">
-  <input  type="text" name="telephone" maxlength="30" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="comments">Comments *</label>
- </td>
- <td valign="top">
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
- </td>
-</tr>
-<tr>
- <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
- </td>
-</tr>
-</table>
-</form>
-	</div>
- 
 
- 
- 
-	
-	
-	
-	
-	
-	
-	</body>
-	
-	
-	</html>
+</body>
+</html>
