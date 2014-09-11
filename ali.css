@@ -1,243 +1,129 @@
-* {margin: 0; padding: 0; outline: 0;}
+/*-------------------------------------
+           Reset Styles
+--------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/*-------------------------------------
+           End Reset Styles
+--------------------------------------*/
 
 
 body {
-	font-family: Helvetica, Arial, Verdana, sans-serif;
-	color: #e5e5e5;
-	font-size: 12px;
-	background:#bfbfbf;
+	line-height: 1;
+	color: black;
+	background: white;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-color: #F5F5F5 ;
+	width: 800px;
+    margin:  100px auto;
+	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif","Georgia","serif";
+	font-size: 100%;
+}
 
+
+div.top{
+	width: 100%;
+	height: 130px;
 	
 }
 
-
-h1, h2 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	margin:0 0 15px 0;
-}
-
-
-h1 {
-	font-size: 36px;
-	letter-spacing: -1px;
-	line-height: 100%;
-}
-
-
-h2 {
-	font-size: 24px;
-}
-
-
-p {
-	margin: 0 0 15px 0;
-}
-
-p.ali{
-	font-size: 60px;
-	font-family: futuracha;
+div.about{
 	float:left;
-	position:absolute;
-	top:260px;
+	width:65%;
+	height:1200px;
 	
+
+}
+ul{
+	padding-left:250px;
+	padding-top:15px;
+	font-size: 20px;
+	font-style: underline;
+
 }
 
-p.kalkandelen{
-	font-size: 60px;
-	font-family: futuracha;
-	float:right;
-	padding-right:150px;
-	position:absolute;
-	top:260px;
-	left:599px;
+h3{
+font-family:Sarina;
+
 }
 
-p.aboutmeleft{word-wrap: break-word;}
+/*SPECIAL FONTS*/
+@font-face {
+    font-family: myFirstFont;
+    src: url(la_Chatte_a Maman.ttf);
+}
 
-div.aboutmeleft{
-	width:90%;
-	height:250px;
+@font-face {
+    font-family: mySecondFont;
+    src: url(BebasNeue.otf);
+}
+
+
+
+img.profile {
+float:right;
+padding-right:10px;
+padding-top:5px;
+
+}
+img.njitlogo{
 	float:left;
-	text-indent: 25px;
-	text-height:100%;
-}
-p.aboutmeright{
-	word-wrap: break-word;
-	text-indent:25px;
-	
-}
-div.aboutmeright{
-	width: 90%;
-	float:right;
-	text-height:100%;
-	height:250px;
 }
 
+p{
+	text-indent: 20px;
+}
+#welcome{
+font-size: 20px;
+font-family:myFirstFont;
 
-#picwrapper{padding-right:250px;}
-a {
-	color: #3e3e3e
-	
 }
 
-img.kid{
-	position:absolute;
-	left:811px;
-	top:50px;
-	height:200px;
-	width:200px;
-	border-radius:10px;
-	
-}
+#aboutme{
+font-family:Lobster;
 
-img.sister{
-	position:absolute;
-	width:200px;
-	height:200px;
-	left:1200px;
-	right:500px;
-	top:290px;
-	border-radius:10px;
 }
-
-img.profilepic{border-radius:130px;}
-
-.clear {
-	clear: both;
-}
-.wrap {
+/*Accordion*/
+#accordion{
 	width: 100%;
-	min-width: 960px;
-	z-index: 10;
-	position: relative;
-	margin: 0 auto;
-	padding: 0;
-
-}
-
-
-
-.section {
-	width: 100%;
-	min-width: 960px;
-	z-index: 10;
-	position: relative;
-	margin: 0 auto;
-	padding: 0 0 20px 0;
-	height: 500px;
-}
-
-
-.inner {
-	width: 960px;
-	margin: 0 auto;
-	position: relative;
-	min-height: 50px;
-	padding:30px 0;
-	font-size: 18px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-}
-
-.inner:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-}
-
-
-.subMenu {
-	height: 50px;
-	z-index: 1000;
-	width: 100%;
-	background: #0977bc;
-}
-
-.subMenu .inner {
-	padding:0;
-	font-weight: 400;
-	margin: 0 auto;
-}
-
-
-.subNavBtn {
-	display: block;
-	height: 35px;
-	width: 10%;
-	float: left;
-	margin: 0px 0px 0 0;
-	text-decoration: none;
-	font-size: 14px;
-	padding: 15px 2% 0 2%;
-	text-align: center;
+	float:left;
+	padding-right: 100px;
+	}
 	
-	color: #fff;
+.ui-accordion-content
+{
+	padding: 6 !important;
+	/*border:none !important;*/
+    background-color: transparent !important;
+    background-image: none;
 }
-.subMenu a:hover {
-	background: #1783c7;
-}
-
-.active {
-	background: #25aae1;
-}
-.end {
-	margin: 0;
-}
-
-
-
-
-/* SECTIONS */
-.sTop {
-	min-height: 130px;
-	 background: -webkit-linear-gradient(black, white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(black, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(black, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#f3f3f3, white); /* Standard syntax (must be last) */
-	color:#3d3d3d;
-	padding: 10px 0;
-	height: 560px;
 	
+.form{
+padding-top:10px;
+width:34%;
+float:right;
+
 }
-
-.s1 {
-	
-	background:#184764;
-	color:#fff;
-	height: 550px;
-	
-}
-
-
-.s2 {
-	background: #313131;
-}
-.s2 a {
-	color: #fff;
-}
-
-.s3 {
-	background: #1b83b3;
-}
-
-
-.s4 {
-	background: #5aa3c4;
-}
-
-
-
-.s5 {
-	background: #bce1f1;
-	color: #3d3d3d;
-}
-
-.s6 {
-	background: #161616;
-}
-
-
-
-
-
